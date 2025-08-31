@@ -47,9 +47,7 @@ let images = {
         this.list.forEach(img => {console.log(`${img.title} (${img.artist}, ${img.date})`)});
     },
     clear: function() {
-        for (img in this.list) {
-            delete this.list[img];
-        }
+        this.list.splice(0);
     },
 };
 
