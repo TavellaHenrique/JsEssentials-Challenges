@@ -181,7 +181,7 @@ class Tutoring {
 
     getTeacherForStudent(student) {
         let matches = [];
-        for (teacher of this.teachers) {
+        for (let teacher of this.teachers) {
             if (ExtendedUser.match(teacher, student).length) {
                 matches.push(teacher);
             }
